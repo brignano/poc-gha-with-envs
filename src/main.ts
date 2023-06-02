@@ -9,6 +9,8 @@ async function run(): Promise<void> {
     core.debug(new Date().toTimeString())
     await wait(parseInt(ms, 10))
     core.debug(new Date().toTimeString())
+    
+    console.log(process.env.MY_SECRET)
 
     core.setOutput('time', new Date().toTimeString())
   } catch (error) {
