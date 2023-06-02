@@ -48,7 +48,7 @@ function run() {
             core.debug(new Date().toTimeString());
             yield (0, wait_1.wait)(parseInt("1000", 10));
             core.debug(new Date().toTimeString());
-            console.log(process.env.mySecret);
+            console.log(mySecret);
             core.setOutput('time', new Date().toTimeString());
         }
         catch (error) {
